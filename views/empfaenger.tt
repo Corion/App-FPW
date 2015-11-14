@@ -1,0 +1,18 @@
+  
+<div id="page">
+
+      <div id="content">
+        <div id="header">
+          <h1>Login</h1>
+        </div>
+        <div><% message %>
+        </div>
+
+        <div id="getting-started">
+        <form action="/login" method="POST" enctype="multipart/form-data">
+        <label for="username">Username:</label><input id="username" name="username" type="text"><br />
+        <label for="password">Password:</label><input name="password" type="password">
+        <button type="submit">Anmelden</button>
+        </div>
+      </div>
+</div>

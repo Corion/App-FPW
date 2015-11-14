@@ -1,0 +1,22 @@
+  
+<div id="page">
+
+      <div id="content">
+        <div id="header">
+          <h1>Text der Mail</h1>
+        </div>
+
+        <form action="/mailtext" method="POST" enctype="multipart/form-data">
+        <label for="subject">Überschrift:</label><input id="subject" name="subject" type="text" value="<% subject |html%>"><br />
+        <label for="mailtext">Mailtext:</label><textarea name="mailtext"><%mailtext |html%></textarea>
+        <button type="submit">Speichern</button>
+        </form>
+        <h1>Vorschau</h1>
+        <h2><% subject |html %></h2>
+        <div class="mailbody">
+        <pre>
+        <% mailtext |html%>
+        </pre>
+        </div>
+      </div>
+</div>
